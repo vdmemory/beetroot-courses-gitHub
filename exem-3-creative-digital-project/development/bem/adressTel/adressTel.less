@@ -1,6 +1,7 @@
 .adressTel {
     display: flex;
     flex-direction: column;
+    background-color: #9F9ACF;
 
     &_item {
         display: flex;
@@ -8,6 +9,20 @@
         position: fixed;
         right: 0;
         background-color: #ebebeb;
+
+        @media (max-width: 768px) {
+            display: none;   
+        }
+    }
+    &_768{
+        display: none;
+        align-items: center;
+        background-color: white;
+        opacity: .5;
+
+        @media (max-width: 768px) {
+            display: flex;   
+        }
     }
 
     &_inner {
@@ -20,13 +35,12 @@
         opacity: .5;
         cursor: pointer;
 
-        @media (max-width: 768px) {
-            width: 90px;
-            height: 90px;
-        }
-
         &:hover {
             opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            display: none;   
         }
     }
 
@@ -38,23 +52,15 @@
     }
 
     ._text1 {
-        display: block;
-
-        @media (max-width: 768px) {
-            font: 400 10px/14px 'PT Sans', sans-serif;
-        }
+        display: none;
     }
 
     ._first-not {
-        width: 350px;
+        width: 90px;
         bottom: 590px;
 
         @media (max-width: 960px) {
             bottom: 450px;
-        }
-
-        @media (max-width: 768px) {
-            bottom: 250px;
         }
     }
 
@@ -63,15 +69,11 @@
     }
 
     ._last-not {
-        width: 350px;
+        width: 90px;
         bottom: 500px;
 
         @media (max-width: 960px) {
             bottom: 360px;
-        }
-
-        @media (max-width: 768px) {
-            bottom: 160px;
         }
     }
 }

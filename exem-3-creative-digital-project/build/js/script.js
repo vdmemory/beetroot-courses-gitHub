@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    $('.nav_menu-burger').on('click', function () {
+    $('.nav_menu-burger').on('click', function() {
         $(this).toggleClass('_expanded');
-        if($('.nav1').hasClass('_active')){
+        if ($('.nav1').hasClass('_active')) {
             $('.nav1').css({
                 display: 'flex'
             });
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    $('._inner1').on('click', function () {
+    $('._inner1').on('click', function() {
         if ($('._inner1').hasClass('_active')) {
             $('._inner1').removeClass('_active');
             $('._text1').css({
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    $('._inner2').on('click', function () {
+    $('._inner2').on('click', function() {
         if ($('._inner2').hasClass('_active')) {
             $('._inner2').removeClass('_active');
             $('._text2').css({
@@ -73,8 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplaySpeed: 2000,
         arrows: true,
         dots: false,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 960, // tablet breakpoint
                 settings: {
                     slidesToShow: 2,
@@ -91,20 +90,20 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     });
 
-    $("#_nav, #_nav1").on("click", "a", function (event) {
+    $("#_nav, #_nav1").on("click", "a", function(event) {
         event.preventDefault();
         let id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top }, 990);
     });
 
-    $(function () {
-        $(document).scroll(function () {
-            if (200 < $(this).scrollTop()){
+    $(function() {
+        $(document).scroll(function() {
+            if (200 < $(this).scrollTop()) {
                 $("#_scrollup").fadeIn();
-            } else{
+            } else {
                 $("#_scrollup").fadeOut();
-            } 
+            }
             if ($(".footer").offset().top > $(this).scrollTop() + $(window).height() - $("#_scrollup").height()) {
                 $("#_scrollup").css({
                     bottom: "50px"
@@ -113,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 $("#_scrollup").css({
                     bottom: $(this).scrollTop() + $(window).height() - $(".footer").offset().top + 30
                 });
-            } 
+            }
         });
-        $("#_scrollup").click(function () { $('body,html').animate({ scrollTop: 0 }, 400); return false; });
+        $("#_scrollup").click(function() { $('body,html').animate({ scrollTop: 0 }, 400); return false; });
     });
 });
