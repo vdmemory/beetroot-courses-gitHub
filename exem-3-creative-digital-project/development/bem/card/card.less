@@ -1,0 +1,51 @@
+@import "../social/social.less";
+
+@colorText: #9f9acf;
+
+.card {
+    margin: 0 10px;
+    position: relative;
+    text-align: center;
+
+    &_picture {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &_main {
+        background-color: transparent;
+        height: 330px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    &_main::before {
+        content: "";
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        height: 370px;
+        width: 100%;
+        background-color: white;
+        z-index: -1;
+    }
+
+    &_title {
+        font: bold 24px/36px 'Proxima Nova Rg', sans-serif;
+        color: @colorText;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    &_subtitle {
+        font: 400 italic 24px/28px 'PT Sans', sans-serif;
+        margin-bottom: 55px;
+    }
+
+    &_footer {
+        background-color: @colorText;
+        height: 70px;
+        width: 100%;
+    }
+}

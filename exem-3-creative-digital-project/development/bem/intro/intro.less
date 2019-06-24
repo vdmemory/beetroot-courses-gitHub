@@ -1,0 +1,66 @@
+@colorText1: #fefdfd;
+
+@colorBG: #9f9acf;
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 140px 35px 0 35px;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &::before {
+        content: " ";
+        background-color: @colorBG;
+        z-index: -2;
+    }
+
+    &::after {
+        content: " ";
+        background: url('../img/bg-intro.jpg') center/cover no-repeat;
+        opacity: .5;
+        z-index: -1;
+
+        @media(max-width: 960px) {
+            display: block;
+            background: url('../img/bg-intro-960.jpg')center/cover no-repeat;
+        }
+
+        @media(max-width: 480px) {
+            display: block;
+            background: url('../img/bg-intro-480.jpg')center/cover no-repeat;
+        }
+    }
+
+    &_title {
+        font: bold 72px/78px 'Proxima Nova Rg', sans-serif;
+        color: @colorText1;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-bottom: 40px;
+
+        @media(max-width: 480px) {
+            font: bold 52px/58px 'Proxima Nova Rg', sans-serif;
+        }
+    }
+
+    &_subtitle {
+        font: 400 italic 30px/36px 'PT Sans', sans-serif;
+        color: @colorText1;
+        text-align: center;
+
+        @media(max-width: 480px) {
+            font: 400 italic 26px/32px 'PT Sans', sans-serif;
+        }
+    }
+}

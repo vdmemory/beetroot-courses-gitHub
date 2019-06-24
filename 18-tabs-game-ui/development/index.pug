@@ -1,0 +1,43 @@
+include bem/item/item.pug
+include bem/rating/rating.pug
+include bem/button/button.pug
+include bem/container/container.pug
+include bem/progress/progress.pug
+
+include _variables.pug
+
+DOCTYPE
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Tabs Game Ui
+		link(rel="shortcut icon", href="favicon.png", type="image/x-icon")
+		link(href="style.css", rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css")
+		link(href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet")
+		script(src='https://code.jquery.com/jquery-3.4.1.js', integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=', crossorigin='anonymous')
+
+	body.layout
+		main.main
+			header.main_header
+				each contIcon in contextIcons
+					.main_item
+						+item(contIcon)
+			+container(
+				'information',
+				'img/farCry.png',
+				'FarCry 4',
+				'First Released Nov 17, 2014',
+				'In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.',
+				'20% OFF!',
+				'$59.96'
+			)
+			section.hide.container(id='rating')
+				+rating()
+			section.hide.container(id='toBuy')
+				+button(btnValue)
+		script(type="text/javascript" src="js/app-jquery.js")
+		script.
+			(()=> document.querySelector('.progress_prog').style.strokeDasharray = '148' + ' 999')()
+		

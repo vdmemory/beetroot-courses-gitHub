@@ -1,0 +1,115 @@
+body {}
+
+/* Typography */
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+    display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+/* Layout */
+
+.ba-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ===========  START USER STYLE  ============ */
+
+html,
+body {
+    font: 300 18px/34px 'Lato', sans-serif;
+    color: #171718;
+}
+
+main {
+    box-shadow: 0 4px 68px rgba(0, 0, 0, .1);
+    margin: 130px 100px;
+    padding: 125px 140px;
+    width: 1400px;
+}
+
+p,
+h1,
+blockquote {
+    letter-spacing: -0.005px;
+}
+
+h1 {
+    font: 42px/1 'Playfair Display', serif;
+}
+
+p:first-of-type::first-letter {
+    font-size: 110px;
+	font-family: 'Playfair Display', serif;
+	line-height: 90px;
+	margin-right: 20px;
+	float: left;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 24px;
+    margin-left: 0;
+}
+
+blockquote::before {
+    content: '“';
+    font-size: 60px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+button {
+    color: #eaa258;
+    text-transform: uppercase;
+    border: 2px solid;
+    background: 0;
+    font: 700 18px/34px 'Lato', sans-serif;
+    letter-spacing: 0.2em;
+    padding: 15px 68px;
+}
+
+button:hover {
+    color: #fff;
+    border-color: #eaa258;
+    background-color: #eaa258;
+}

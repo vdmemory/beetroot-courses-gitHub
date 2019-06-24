@@ -1,0 +1,49 @@
+include ../header/header.pug
+include ../get/get.pug
+include ../iphone/iphone.pug
+include ../variables/variables.pug
+include ../comment/comment.pug
+include ../title/title.pug
+include ../food/food.pug
+include ../statist/statist.pug
+
+mixin layout()
+    .layout.bg
+        .layout_section.bg_head-backside
+            .layout_inner
+                +header({
+                    logo:'img/logo.png',
+                    navBars,
+                    subtitleMotto:'Find your Favorite', 
+                    titleMotto:'RECIPES',
+                    text:'OR SEND US YOUR OWN RECIPES AND GET REWARDED!'
+                })
+        .layout_section
+            .layout_inner
+                +get(getVals)
+        .layout_section.bg_iphone-backside
+            .layout_inner
+                +iphone({
+                    iTitle:'INTRODUCING THE FUDI APP',
+                    iText,
+                    iApp:'img/Layer 3.png', 
+                    iGoogle:'img/Layer 4.png',
+                })
+        .layout_section.bg_comment-backside
+            .layout_inner
+                +comment()
+        .layout_section.bg_title-backside
+            .layout_inner
+                +get-title('BROWSE BY CUISINES')
+        +food(foodVals)    
+        .layout_section
+            .layout_inner.bg_static-backside
+                +static(statVal)
+        .layout_section
+            footer.layout_footer
+                .layout_left
+                    p.layout_text-left ©2014 Fudi. All Rights Reserved.
+                .layout_right
+                    p.layout_text-right DESIGN BY:
+                        a(href="#", title="WWW.BEKADES.COM").layout_text-link WWW.BEKADES.COM
+

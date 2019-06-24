@@ -1,0 +1,134 @@
+* {
+    /* transition: background-color 0.1s ease-in; */
+    transition-property: background-color, border-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #3B3F45;
+    border: 20px solid white;
+    box-sizing: border-box;
+    /* TODO: remove later */
+    /*--size: 20px;*/
+    /*height: calc(100% - var(--size) * 2); */
+    /*border: var(--size) solid white;*/
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+header,
+button {
+    background-color: #4A4F56;
+    padding: 20px 0;
+    color: #EB7E7F;
+}
+
+ul {
+    width: 600px;
+    margin: 35px auto;
+    /*для одинаковых отступов*/
+    padding: 0;
+    cursor: pointer;
+}
+
+li {
+    background-color: #88839E;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    list-style: none;
+}
+
+li:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+li:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+li:nth-child(2n) {
+    background-color: #7A7593;
+}
+
+li:hover {
+    background-color: #625E77;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+button {
+    display: block;
+    width: 600px;
+    margin: auto;
+    background-color: #4A4F56;
+    border: 0;
+    cursor: pointer;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #625E77;
+    border-top: 3px solid #88839E;
+    border-bottom: 3px solid #88839E;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover,
+li:hover {
+    /* transition: background-color 0.1s ease-in; */
+    transition-property: background-color, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.list-item {
+    font-size: 20px;
+}
+
+span:not(.list-item) {
+    font-size: 12;
+    color: #C1B9BF;
+}
+
+span:not(.list-item)::before {
+    content: "( ";
+}
+
+span:not(.list-item)::after {
+    content: " )";
+}
+
+input:checked~span {
+    text-decoration: line-through;
+    color: ccc;
+}
+
+label {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+}

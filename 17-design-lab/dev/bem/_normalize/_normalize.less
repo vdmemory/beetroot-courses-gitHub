@@ -1,0 +1,48 @@
+@mainColor: #3c3c3c;
+@layoutWidth: 900px;
+@h2Size: 34px;
+
+body {
+    font: 300 14px/26px 'Lato', sans-serif;
+    color: @mainColor;
+}
+
+.layout {
+    min-width: @layoutWidth;
+    &_section {
+        width: @layoutWidth;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+.h1,
+.h2 {
+    font: 700 54px 'Lato', sans-serif;
+    letter-spacing: 0.16em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.h2 {
+    line-height: 1;
+    font-size: @h2Size;
+    color: @mainColor;
+    &__invert {
+        color: white;
+    }
+}
+
+.p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: @mainColor;
+    font: 16px/20px 'Lato', sans-serif;
+    letter-spacing: 0.16em;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    padding: 18px 20px;
+}

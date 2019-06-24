@@ -1,0 +1,46 @@
+@import "../../params.less";
+
+.layout {
+    width: 100%;
+    min-width: 1180px;
+
+    &_section {
+        width: 100%;
+    }
+
+    &_inner {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &_footer {
+        height: 95px;
+        border-top: 1px solid #e2e2e2;
+        background-image: none;
+        background-color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &_text-left,
+    &_text-right {
+        font: 300 14px 'Lato', sans-serif;
+        color: #c1c1c1;
+    }
+
+    &_text-right {
+        letter-spacing: 2px;
+    }
+
+    &_text-link {
+        font: 700 16px 'Lato', sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+
+}

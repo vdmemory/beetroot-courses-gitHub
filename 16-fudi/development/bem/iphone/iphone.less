@@ -1,0 +1,55 @@
+.iphone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &_left-bar {
+        background: url(img/iPhone5s.png) bottom left no-repeat;
+        height: 100%;
+        width: 600px;
+        margin-right: 40px;
+    }
+
+    &_right-bar {
+        width: 540px;
+    }
+
+    &_title {
+        display: block;
+        font: 700 18px/30px 'Lato', sans-serif;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: #f57365;
+            width: 90px;
+            height: 1px;
+            margin: 5px 0 20px;
+        }
+    }
+
+    &_position-bar {
+        width: 440px;
+        height: 630px;
+        background-image: url(img/main-mini.png);
+        position: absolute;
+        bottom: -12px;
+        left: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_text {
+        font: 300 16px/28px 'Lato', sans-serif;
+        letter-spacing: 0.03em;
+    }
+
+    &_app,
+    &_google {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.layout {
+
+    /* display: flex; */
+    /* justify-content: start; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* min-width: 1000px; */
+}
+
+.main {
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(45deg, orange, purple);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.main_title {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 130;
+}
+
+.main_subtitle {
+    font: 700 16px/22px 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.main_input {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    background-color: white;
+    padding: 0 20px;
+    font: 400 12px/16px 'Lato', sans-serif;
+    border-radius: 3px;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #dadada;
+}
+
+.main__blue {
+    text-align: center;
+    color: white;
+    background-color: #3897F0;
+}
+
+.main__blue:hover {
+    border: 1px solid #dadada;
+    text-align: center;
+    color: #dadada;
+    background: linear-gradient(45deg, orange, purple);
+}
+
+.main_text,
+.main_text_f,
+.main_text_down {
+    color: #dadada;
+    font: 400 9px/12px 'Lato', sans-serif;
+    text-align: center;
+
+}
+
+.main_text {
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.main_text_down {
+    margin-top: 115px;
+}
+
+.main_text_down>a,
+.main_text>a {
+    color: #dadada;
+    font: 400 8px/12px 'Lato', sans-serif;
+}
+
+.main_row {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.main_solid {
+    height: 1px;
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_or {
+    height: 10px;
+    width: 15px;
+    margin: 15px;
+    color: #dadada;
+    font: 400 9px/12px 'Lato', sans-serif;
+}
+
+.face {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}

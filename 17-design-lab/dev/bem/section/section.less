@@ -1,0 +1,42 @@
+@padding: 170px;
+
+.section {
+    text-align: center;
+    margin-top: @h2Size / 2;
+    padding: 120px 0;
+    &_content {
+        border: 1px solid;
+        border-top: 0;
+        padding: 0 @padding 15px;
+    }
+    &_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 0 -@padding 40px;
+        top: @h2Size / -2;
+        &::before,
+        &::after, {
+            content: '';
+            height: 1px;
+            background-color: currentColor;
+            flex: 1 ;
+        }
+        &::before {
+            margin-right: 100px;
+        }
+        &::after {
+            margin-left: 100px;
+        }
+    }
+    &_button {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    &__invert {
+        color: white;
+        background-image: url(img/services.jpg);
+    }
+}

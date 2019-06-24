@@ -1,0 +1,7 @@
+mixin motto(motto)
+    .motto
+        h2.motto_subtitle= motto.subtitleMotto
+        h1.motto_title= motto.titleMotto
+
+mixin link(href, name)        
+        a(class!=attributes.class href=href)= name

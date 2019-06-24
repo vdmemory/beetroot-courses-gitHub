@@ -1,0 +1,35 @@
+
+.food_item {
+    position: relative;
+    width: 20%;
+    font-size: 0;
+}
+
+.food {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+
+    &_image {
+        width: 100%;
+    }
+
+    &_title {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        top: calc(50% - 25px);
+        text-align: center;
+        width: 100%;
+    }
+
+    &_subtitle {
+        font-size: 14px;
+    }
+
+    &_cook {
+        font: 700 36px 'Lato', sans-serif;
+    }
+}

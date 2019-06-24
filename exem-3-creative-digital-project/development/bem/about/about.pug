@@ -1,0 +1,19 @@
+include ../main/main.pug
+include ../botton/botton.pug
+
+mixin about()
+    section.about.layout_1170#_About
+        .about_content.layout_1170
+            .about_title
+                +main(
+                    'icons/Icon-AboutUs.png',
+                    'About us'
+                )
+            .about_info
+                .about_text Nullam quis risus eget urna <strong>mollis ornare</strong> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                .about_text <strong>Morbi leo risus</strong>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet <em>fermentum</em>.  Sed posuere consectetur est at lobortis.
+                .about_botton
+                    +botton(
+                        "Learn More",
+                        'button__btn-gray'
+                        )

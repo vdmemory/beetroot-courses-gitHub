@@ -1,0 +1,4 @@
+mixin item(contIcon)
+    a.item(href=contIcon.href, title=contIcon.title, class=contIcon.class)
+        img.item_icon(src=contIcon.svg, alt=contIcon.title)
+        h2.item_title=contIcon.title

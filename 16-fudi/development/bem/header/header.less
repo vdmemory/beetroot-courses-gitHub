@@ -1,0 +1,39 @@
+@import "../../params.less";
+
+.header {
+    letter-spacing: 0.05em;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &_top-line {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_top-left {
+        margin-left: 10px;
+    }
+
+    &_top-right {
+        margin-right: 10px;
+    }
+
+    &_bottom-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 60px);
+    }
+
+    &_text {
+        margin-top: 40px;
+        font: 500 14px/30px 'Lato', sans-serif;
+        .title-text
+    }
+}

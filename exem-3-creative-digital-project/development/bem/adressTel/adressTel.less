@@ -1,0 +1,77 @@
+.adressTel {
+    display: flex;
+    flex-direction: column;
+
+    &_item {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        background-color: #ebebeb;
+    }
+
+    &_inner {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9F9ACF;
+        opacity: .5;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            width: 90px;
+            height: 90px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &_text {
+        text-align: center;
+        padding: 12px 37px;
+        font: 400 18px/22px 'PT Sans', sans-serif;
+        margin: auto;
+    }
+
+    ._text1 {
+        display: block;
+
+        @media (max-width: 768px) {
+            font: 400 10px/14px 'PT Sans', sans-serif;
+        }
+    }
+
+    ._first-not {
+        width: 350px;
+        bottom: 590px;
+
+        @media (max-width: 960px) {
+            bottom: 450px;
+        }
+
+        @media (max-width: 768px) {
+            bottom: 250px;
+        }
+    }
+
+    ._text2 {
+        display: none;
+    }
+
+    ._last-not {
+        width: 350px;
+        bottom: 500px;
+
+        @media (max-width: 960px) {
+            bottom: 360px;
+        }
+
+        @media (max-width: 768px) {
+            bottom: 160px;
+        }
+    }
+}

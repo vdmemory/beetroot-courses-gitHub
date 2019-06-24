@@ -1,0 +1,45 @@
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    &__dotted::before,
+    &__dotted::after {
+        content: '';
+        width: 285px;
+        height: 200px;
+        border-top: 1px dotted;
+        border-radius: 52%;
+        position: absolute;
+        top: -70px;
+        opacity: 0.2;
+    }
+
+    &__dotted::before {
+        left: 600px;
+    }
+
+    &__dotted::after {
+        right: 600px;
+    }
+
+    &_item {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #e8e8e8;
+    }
+
+    &_icon {
+        margin-bottom: 30px;
+    }
+}

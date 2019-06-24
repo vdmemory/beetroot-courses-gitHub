@@ -1,0 +1,33 @@
+.progress {
+    position:absolute;
+    cursor:pointer;
+
+    &_circle {
+        transform:rotate(-90deg);
+    }
+    
+    &_back,
+    &_prog{
+        fill:none;
+    }
+
+    &_back {
+        stroke:#D2D2D2;
+        stroke-width:2px;
+    }
+
+    &_prog {
+        stroke: #13e28d;
+        stroke-width:4px;
+        stroke-dasharray:0 999;
+        stroke-dashoffset:0px;
+        transition:stroke-dasharray 0.7s linear 0s;
+    }
+
+    &_text {
+        position:absolute;
+        font-size: 2em;
+        bottom: 30px;
+        right: 20px;
+    }
+}

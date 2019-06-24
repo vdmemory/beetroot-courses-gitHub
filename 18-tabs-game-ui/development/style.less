@@ -1,0 +1,44 @@
+@import "bem/_normalize/_normalize.less";
+
+@import "bem/item/item.less";
+@import "bem/container/container.less";
+@import "bem/rating/rating.less";
+@import "bem/progress/progress.less";
+@import "bem/button/button.less";
+
+.main {
+    width: 600px;
+    background: #212534;
+    min-width: 600px;
+    margin: auto;
+
+    &_header {
+        width: 100%;
+        background-color: #262836;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        height: 115px;
+    }
+
+    &_item {
+        flex-basis: 30%;
+        margin: 0 3%;
+        text-align: center;
+        opacity: 0.3;
+        position: relative;
+        transition:0.2s ease-in;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

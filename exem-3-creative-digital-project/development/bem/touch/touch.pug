@@ -1,0 +1,13 @@
+mixin touch(name, email, mess, val)
+    section.touch#_Contact
+        .touch_content.layout_867
+            +main(
+                'icons/Icon-Touch.png',
+                'GET IN TOUCH'
+            )
+            form(action="https://echo.htmlacademy.ru", method="get", name="message").touch_form
+                input(size="1", type="text", name="message", placeholder=name, required).touch_input
+                input(size="1", type="email", name="message", id="", placeholder=email, required).touch_input
+                textarea(name="message", id="", cols="30", rows="10", placeholder=mess, required).touch_input
+                input.touch_button(type="submit", value=val)
+            a(href="#" id="_scrollup").touch_scrollup

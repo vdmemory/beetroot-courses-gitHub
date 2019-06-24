@@ -1,0 +1,1 @@
+.dot_items{text-align:center}.dot_item{position:relative;width:10px;height:10px;bottom:18px;left:5px;opacity:0.4;background:white;display:block;border-radius:100px;z-index:0}.dot_button{display:inline-block}.dot_input{position:relative;z-index:1;opacity:0}.dot_input:hover{cursor:pointer}.dot_input:checked+.dot_item{opacity:1}

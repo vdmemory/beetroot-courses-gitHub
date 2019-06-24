@@ -1,0 +1,81 @@
+
+<DOCTYPE></DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tabs Game Ui</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  </head>
+  <body class="layout">
+    <main class="main">
+      <header class="main_header">
+        <div class="main_item"><a class="item _active" href="#information" title="INFORMATION"><img class="item_icon" src="svg/tooltip.svg" alt="INFORMATION"/>
+            <h2 class="item_title">INFORMATION</h2></a>
+        </div>
+        <div class="main_item"><a class="item" href="#rating" title="RATINGS INFO"><img class="item_icon" src="svg/card.svg" alt="RATINGS INFO"/>
+            <h2 class="item_title">RATINGS INFO</h2></a>
+        </div>
+        <div class="main_item"><a class="item" href="#toBuy" title="WHERE TO BUY"><img class="item_icon" src="svg/tooltip.svg" alt="WHERE TO BUY"/>
+            <h2 class="item_title">WHERE TO BUY</h2></a>
+        </div>
+      </header>
+      <section class="container" id="information">
+        <div class="container_left"><img class="container_picture" src="img/farCry.png" alt="POSTER"/>
+          <div class="container_rating">
+            <div class="rating">
+              <div class="rating_caption">
+                <div class="rating_list"><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_right">
+          <div class="container_row">
+            <div class="container_col">
+              <h1 class="container_title">FarCry 4</h1>
+              <p class="container_subtitle">First Released Nov 17, 2014</p>
+            </div>
+            <div class="container_progress">
+              <div class="progress">
+                <svg class="progress_circle" width="80px" height="80px" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="progress_back" cx="40" cy="40" r="34"></circle>
+                  <circle class="progress_prog" cx="40" cy="40" r="34"></circle>
+                </svg>
+                <div class="progress_text">7.8</div>
+              </div>
+            </div>
+          </div>
+          <p class="container_text">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.</p>
+          <div class="container_row">
+            <div class="container_col">
+              <p class="container_sale">20% OFF!</p>
+              <p class="container_price">$59.96</p>
+            </div>
+            <div class="container_col">
+              <div class="container_buy"><a class="button" href="#" title="Buy it now">Buy it now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hide container" id="rating">
+        <div class="rating">
+          <div class="rating_caption">
+            <div class="rating_list"><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span><span class="rating_item">&#9733;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hide container" id="toBuy"><a class="button" href="#" title="Buy it now">Buy it now</a>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/app-jquery.js"></script>
+    <script>(()=> document.querySelector('.progress_prog').style.strokeDasharray = '148' + ' 999')()</script>
+  </body>
+</html>

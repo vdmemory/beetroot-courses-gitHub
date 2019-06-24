@@ -1,0 +1,14 @@
+mixin nav(titleName ,navigationData)
+    nav.nav.layout.layout__bg-nav
+        .nav_content.layout_section
+            .nav_left
+                a.nav_title(href="#", title=titleName)=titleName
+            .nav_right
+                ul.nav_bar
+                    each navData in navigationData
+                        +nav_Data(navData)
+
+mixin nav_Data(navData)
+    if (navData.navLink.length > 0)
+        li.nav_item
+            a.nav_link(href=navData.navLink, title=navData.navName)=navData.navName

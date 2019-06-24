@@ -1,0 +1,47 @@
+.nav {
+    width: 100%;
+    z-index: 20;
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        height: 100%;
+    }
+
+    &_title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.15em;
+    }
+
+    &_bar {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0;
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        display: flex;
+    }
+
+    &_item {
+        margin-left: 45px;
+        list-style: none;
+    }
+
+    &_link,
+    &_title {
+        text-decoration: none;
+        color: white;
+    }
+
+    &_link:hover {
+        text-decoration: underline;
+    }
+
+    &_title:hover {
+        font-size: 25px;
+    }
+}

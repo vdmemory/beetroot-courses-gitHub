@@ -1,0 +1,136 @@
+.touch {
+    position: relative;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &::before {
+        content: " ";
+        background-color: @colorBG;
+        z-index: -2;
+    }
+
+    &::after {
+        content: " ";
+        background: url('../img/bg-touch.jpg') center/cover no-repeat;
+        opacity: .5;
+        z-index: -1;
+
+        @media(max-width: 960px) {
+            display: block;
+            background: url('../img/bg-touch-960.jpg')center/cover no-repeat;
+        }
+
+        @media(max-width: 480px) {
+            display: block;
+            background: url('../img/bg-touch-480.jpg')center/cover no-repeat;
+        }
+    }
+
+    &_form {
+        margin: 260px 10px 0 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            margin: 30px 20px 0 20px;
+        }
+    }
+
+    &_input {
+        border: none;
+        margin-bottom: 60px;
+        font: 400 italic 18px/18px 'PT Sans', sans-serif;
+        padding: 18px 25px;
+        flex-basis: 100%;
+        border-radius: 3px;
+        background-color: rgba(235, 235, 235, .5);
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_input:nth-child(-n + 2) {
+        flex-basis: calc(50% - 15px);
+
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+        }
+    }
+
+    &_button {
+        margin: 0 auto;
+        min-width: 180px;
+        display: inline-block;
+        font: bold 20px/26px 'Proxima Nova Rg', sans-serif;
+        background-color: @colorText;
+        padding: 20px 70px 20px 70px;
+
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.1s linear;
+        text-align: center;
+        box-shadow: 0px 4px 1px #8783b0;
+        margin-bottom: 55px;
+
+        &:hover {
+            padding: 24px 70px 16px 70px;
+            box-shadow: 0px 4px 1px @colorText;
+        }
+    }
+
+    &_scrollup {
+        width: 80px;
+        height: 80px;
+        opacity: .3;
+        position: fixed;
+        bottom: 50px;
+        right: 130px;
+        display: block;
+        text-indent: -9999px;
+        background: #8783B0 url('../icons/Icon-ArrowTop.png') no-repeat center;
+        transition: opacity .1s linear;
+
+        @media (max-width: 1024px) {
+            right: 0px;
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+::-moz-placeholder {
+    color: white;
+}
+
+:-moz-placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}

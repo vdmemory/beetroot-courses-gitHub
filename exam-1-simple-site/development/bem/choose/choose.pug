@@ -1,0 +1,16 @@
+include ../title-section-h2/title-section-h2.pug
+include ../button-section/button-section.pug
+
+mixin choose(title, textOne, textTwo, nameBtn, linkImgOne, linkImgTwo)
+    section.choose.layout.layout__bg-choose
+        .choose_content.layout_section
+            .choose_left-bar
+                .choose_title
+                    +title-section-h2(title)
+                p.choose_text=textOne   
+                p.choose_text=textTwo
+                .choose_button
+                    +button-section(nameBtn) 
+            .choose_right-bar
+                    img.choose_image-1(src=linkImgOne)
+                    img.choose_image-2(src=linkImgTwo)

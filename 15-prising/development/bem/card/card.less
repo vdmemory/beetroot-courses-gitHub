@@ -1,0 +1,86 @@
+@import "../title/title.less";
+@import "../package/package.less";
+@import "../params.less";
+@import "../button/button.less";
+@import "../label/label.less";
+
+.card {
+    background: @bg-color-card url(img/bgi.png) no-repeat;
+    background-position-y: 66%;
+    background-size: contain;
+    box-shadow: 0 0 40px @basis-color;
+    .flex-center;
+    flex-direction: column;
+    width: 330px;
+    height: 615px;
+    margin: 0 10px;
+    position: relative;
+    justify-content: flex-start;
+    padding: 40px 0 0 0;
+    box-sizing: border-box;
+
+    &__active {
+        height: 692px;
+        width: 370px;
+        padding: 50px 0 0 0;
+    }
+
+    &_price {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+
+    &_currency {
+        align-self: flex-start;
+        font: 24px/20px 'Bebas Neue Thin', sans-serif;
+    }
+
+    &_value {
+        align-self: center;
+        font: 60px/36px 'Bebas Neue Thin', sans-serif;
+    }
+
+    &_time {
+        align-self: flex-end;
+        font: 16px/20px 'Bebas Neue Light', sans-serif;
+    }
+
+    &_list {
+        background: url(img/Curv-shape.png);
+    }
+
+    &_footer {
+        margin: 25px 0 0 0;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_button {
+        position: absolute;
+        width: 100%;
+        bottom: 25px;
+        left: 21%;
+
+        &__active {
+            left: 23%;
+            bottom: 115px;
+        }
+    }
+
+    &_label {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+
+    &_discount {
+        padding: 96px 0 0 0;
+        .block-center;
+        font: 300 11px 'Roboto', sans-serif;
+        color: #a9a9a9;
+    }
+}

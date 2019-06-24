@@ -1,0 +1,52 @@
+.nav1 {
+    display: none;
+    font: 600 24px/42px 'Proxima Nova Lt', sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+    left: 0;
+    justify-content: center;
+    transform: translateX(100px);
+    height: 280px;
+    width: 100%;
+    background-color: rgba(83, 81, 109, .6);
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    animation: exemp .5s linear forwards;
+
+    &_link1 {
+        color: white;
+        text-decoration: none;
+        opacity: .85;
+        position: relative;
+        transition: font-size 0.1s linear;
+        overflow: hidden;
+        padding: 5px 10px;
+    }
+
+    &_link1:hover {
+        opacity: 1;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+}
+
+@keyframes exemp {
+    0% {
+        width: 20%;
+        transform: translateX(300px);
+        font-size: 0px;
+    }
+
+    50% {
+        width: 60%;
+        transform: translateX(150px);
+        font-size: 12px;
+    }
+
+    100% {
+        width: 100%;
+        transform: translateX(0px);
+        font-size: 24px;
+    }
+}

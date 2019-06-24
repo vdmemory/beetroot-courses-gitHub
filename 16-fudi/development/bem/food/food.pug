@@ -1,0 +1,10 @@
+mixin food(foodVals)
+    .food
+        each foodVal in foodVals
+            .food_item
+                .food_inner
+                    img.food_image(src=foodVal.image)
+                    .food_title
+                        span.food_subtitle=foodVal.subtitle
+                        h4.food_cook=foodVal.cook
+

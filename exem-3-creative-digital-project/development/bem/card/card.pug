@@ -1,0 +1,10 @@
+include ../social/social.pug
+
+mixin card(slider2)
+    .card
+        .card_main
+            img(src=slider2.src, alt="alt").card_picture
+        .card_title=slider2.title
+        .card_subtitle=slider2.subtitle
+        .card_footer
+            +social(contextSocial)

@@ -1,0 +1,17 @@
+include ../main/main.pug
+include ../graphic/graphic.pug
+
+mixin services
+    section.services#_Services
+        .services_content.layout_1170
+            .services_items
+                each graphic in contextGraphic
+                    .services_item
+                        +graphic(graphic)
+            .services_title
+                +main(
+                        'icons/Icon-Services.png',
+                        'Our Services'
+                    )
+                p.services_text “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”
+                p.services_subtext - Borat -

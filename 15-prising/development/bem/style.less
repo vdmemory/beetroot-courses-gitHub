@@ -1,0 +1,23 @@
+@import "card/card.less";
+@import "params.less";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: @basis-color;
+}
+
+.main {
+    height: 100%;
+    .flex-center;
+    .basis-fonts;
+    .view-port;
+
+    &_inner {
+        .flex-center;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,120 @@
+/* ==== START USER CODE ==== */
+
+body {
+    width: 1920px;
+    color: #fff;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 1920px;
+    height: 1892px;
+    background-image: url(../img/bg.png);
+}
+
+header {
+    background-color: #23232e;
+    height: 893px;
+}
+
+header>img {
+    margin: 80px 877px;
+}
+
+header>h1,
+header>p,
+section>p,
+section>h2,
+section>aside>h3,
+section>aside>p {
+    text-align: center;
+}
+
+header>h1 {
+    margin: 103px auto 50px auto;
+    font-size: 80px;
+    padding: 0;
+}
+
+header>p,
+ section>aside{
+	font-size: 18px;
+ } 
+ 
+ header>p {
+    margin: 9px 731px;
+    line-height: 30px;
+}
+
+header>a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    margin: 182px auto 50px auto;
+}
+
+header>a>img {
+    margin: 12px 12px;
+}
+
+section>p:first-child {
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+section>p,
+section>h2,
+section>aside>h3,
+section>aside>p {
+    color: #464b4f;
+}
+
+section>p {
+    margin-left: 530px;
+    margin-right: 530px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+section>h2,
+section>aside>h3,
+header>h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section>h2 {
+    margin: 100px 0 75px 0;
+    font-size: 80px;
+    padding: 0;
+}
+
+section:last-child {
+    width: 942px;
+    margin: 0 auto 95px auto;
+    font-size: 0;
+}
+
+section>aside {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+}
+
+section>aside>h3,
+section>aside>p {
+    text-align: left
+}
+
+section>aside>p {
+    line-height: 30px;
+}
+
+section>aside:last-child {
+    margin-right: 0;
+}

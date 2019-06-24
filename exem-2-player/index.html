@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="layout">
+
+    <template class="tmpl-list">
+        <li class="list_item">
+            <div class="list_hover"></div>
+            <div class="list_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="orange" width="14" height="14" viewBox="0 0 14 14">
+                    <path id="Now_playing" data-name="Now playing"
+                        d="M437,165.984h0a1.579,1.579,0,0,1-1.031,1.372s-10.281,4.9-10.969,5.27a2.043,2.043,0,0,1-1,.343,1,1,0,0,1-1-1V160a1,1,0,0,1,1-1,2.043,2.043,0,0,1,1,.343c0.688,0.374,10.969,5.269,10.969,5.269A1.581,1.581,0,0,1,437,165.984h0Z"
+                        transform="translate(-423 -159)" />
+                </svg>
+            </div>
+            <div class="list_name">We found love</div>
+            <div class="list_time"></div>
+            <audio class="list_audio" src="track/0C2E32249BA5AE27927F1D92DFB5A644.mp3"></audio>
+        </li>
+    </template>
+
+    <main class="player">
+        <header class="player_top">
+            <div class="player_buttons">
+                <div class="player_btn"><img src="img/btn1.png" alt=""></div>
+                <div class="player_btn"><img src="img/btn2.png" alt=""></div>
+                <div class="player_btn"><img src="img/btn3.png" alt=""></div>
+            </div>
+            <div class="player_logo">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                    <path id="Grooveshark_logo" data-name="Grooveshark logo"
+                        d="M409.5,128.989A17.49,17.49,0,1,1,427,111.5,17.5,17.5,0,0,1,409.5,128.989Zm0.293-31.478a13.556,13.556,0,0,0-13.667,10.68s-1.938,7.514,2.885,6.143c0,0,6.952-2.646,4.209-13.042A14.011,14.011,0,0,1,413.244,108s6.716,11.436,9.553,5.907C422.8,113.909,426.485,100.252,409.792,97.511Z"
+                        transform="translate(-392 -94)" />
+                </svg>
+            </div>
+        </header>
+
+        <section class="player_content">
+            <section class="player_left-bar">
+                <div class="detail">
+                    <img class="detail_picture" src="img/placeholder.png" alt="We’ll be coming back">
+                    <h1 class="detail_title">Song title</h1>
+                    <h2 class="detail_subtitle">Song author</h2>
+                </div>
+            </section>
+    
+            <section class="player_right-bar">
+                <ul class="list">
+
+                </ul>
+            </section>
+        </section>
+
+        <footer class="player_nav">
+            <div class="navigation">
+                <svg class="navigation_previous" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                    <path id="Previous"
+                        d="M153.031,488.5s6.344-4.656,6.969-5.094a1.731,1.731,0,0,1,1-.406,1,1,0,0,1,1,1v12a1,1,0,0,1-1,1,1.731,1.731,0,0,1-1-.406c-0.625-.438-6.969-5.094-6.969-5.094A2.318,2.318,0,0,1,152,490h0A2.318,2.318,0,0,1,153.031,488.5ZM151,497h-4a1,1,0,0,1-1-1V484a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v12A1,1,0,0,1,151,497Z"
+                        transform="translate(-146 -483)" />
+                </svg>
+                
+                <svg class="navigation_play" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <path id="Play"
+                        d="M195,490.975h0a2.483,2.483,0,0,1-1.621,2.156s-16.156,7.693-17.236,8.281a3.2,3.2,0,0,1-1.572.539A1.57,1.57,0,0,1,173,500.383V481.568A1.57,1.57,0,0,1,174.571,480a3.2,3.2,0,0,1,1.572.539c1.08,0.588,17.236,8.281,17.236,8.281A2.483,2.483,0,0,1,195,490.975h0Z"
+                        transform="translate(-173 -480)" />
+                </svg>
+                <svg class="navigation_next" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                    <path id="Next"
+                        d="M213.969,491.5s-6.344,4.656-6.969,5.094a1.731,1.731,0,0,1-1,.406,1,1,0,0,1-1-1V484a1,1,0,0,1,1-1,1.731,1.731,0,0,1,1,.406c0.625,0.438,6.969,5.094,6.969,5.094A2.318,2.318,0,0,1,215,490h0A2.318,2.318,0,0,1,213.969,491.5ZM216,483h4a1,1,0,0,1,1,1v12a1,1,0,0,1-1,1h-4a1,1,0,0,1-1-1V484A1,1,0,0,1,216,483Z"
+                        transform="translate(-205 -483)" />
+                </svg>
+              
+                <progress class="player_progress" max="100" value="0"></progress>
+
+                <svg class="navigation_shape2" xmlns="http://www.w3.org/2000/svg" width="26" height="18.969" viewBox="0 0 26 18.969">
+                    <path id="Muted"
+                        d="M536.108,492.311l3.414,3.4A1.568,1.568,0,0,1,540,496.83a1.536,1.536,0,0,1-1.575,1.568,1.58,1.58,0,0,1-1.125-.474l-3.387-3.372-3.413,3.4a1.536,1.536,0,0,1-1.145.467,1.564,1.564,0,0,1-1.131-.467,1.492,1.492,0,0,1-.457-1.113,1.555,1.555,0,0,1,.484-1.126l3.413-3.4-3.414-3.4a1.517,1.517,0,0,1-.456-1.1,1.489,1.489,0,0,1,.456-1.113,1.605,1.605,0,0,1,2.223,0l3.413,3.4,3.415-3.4a1.457,1.457,0,0,1,1.1-.435,1.588,1.588,0,0,1,1.124.488,1.521,1.521,0,0,1,0,2.16Zm-11.62,9.463-4.6-3.749a2.925,2.925,0,0,1-.949-2v-7.054a2.93,2.93,0,0,1,.949-2l4.6-3.748c0.522-.426.949-0.224,0.949,0.448v17.646C525.437,502,525.01,502.2,524.488,501.774Zm-7.459-4.888-1.816-.351a1.546,1.546,0,0,1-1.2-1.454v-5.157a1.546,1.546,0,0,1,1.2-1.454l1.816-.35a0.975,0.975,0,0,1,1.205.99V495.9A0.976,0.976,0,0,1,517.029,496.886Z"
+                        transform="translate(-514 -483)" />
+                </svg>
+                <svg class="navigation_shuffle" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                    <path id="Shuffle"
+                        d="M581.134,489.335a1.223,1.223,0,0,1-1.362.279,1.289,1.289,0,0,1-.772-1.19v-1.287h-6.25v10.3h-7.5a1.269,1.269,0,0,1-1.25-1.287v-1.288h6.25v-10.3H579v-1.288h0a1.289,1.289,0,0,1,.772-1.19,1.226,1.226,0,0,1,1.362.279l2.5,2.576a1.314,1.314,0,0,1,0,1.82Zm-15.884-2.2H564v-1.288a1.269,1.269,0,0,1,1.25-1.287h2.5v2.575h-2.5Zm11.25,7.726H579v-1.287a1.289,1.289,0,0,1,.772-1.19,1.223,1.223,0,0,1,1.362.279l2.5,2.576a1.314,1.314,0,0,1,0,1.82l-2.5,2.576a1.226,1.226,0,0,1-1.362.279,1.289,1.289,0,0,1-.772-1.19h0v-1.287h-2.5A1.288,1.288,0,0,1,576.5,494.863Z"
+                        transform="translate(-564 -482)" />
+                </svg>
+                <svg class="navigation_repeat" xmlns="http://www.w3.org/2000/svg" width="22.938" height="18" viewBox="0 0 22.938 18">
+                    <path id="Repeat"
+                        d="M627.535,489.561l-2.87,3a1.4,1.4,0,0,1-1.014.439h0a1.4,1.4,0,0,1-1.014-.439l-2.87-3a1.554,1.554,0,0,1-.311-1.635,1.437,1.437,0,0,1,1.326-.926h1.434v-3H607.869v-1.5A1.469,1.469,0,0,1,609.3,481h14.347a1.469,1.469,0,0,1,1.435,1.5V487h1.434a1.435,1.435,0,0,1,1.326.926A1.55,1.55,0,0,1,627.535,489.561ZM609.3,487a1.4,1.4,0,0,1,1.015.44l2.869,3a1.55,1.55,0,0,1,.311,1.635,1.435,1.435,0,0,1-1.325.926h-1.435v3h14.347v1.5a1.469,1.469,0,0,1-1.435,1.5H609.3a1.469,1.469,0,0,1-1.435-1.5v-3h0V493h-1.434a1.437,1.437,0,0,1-1.326-.926,1.554,1.554,0,0,1,.311-1.635l2.87-3A1.4,1.4,0,0,1,609.3,487Z"
+                        transform="translate(-605 -481)" />
+                </svg>
+                <svg class="navigation_share" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path id="Share"
+                        d="M671,494.5v3.375A1.125,1.125,0,0,1,669.875,499h-15.75A1.125,1.125,0,0,1,653,497.875v-15.75A1.125,1.125,0,0,1,654.125,481h7.356a4.487,4.487,0,0,0-.606,2.25H655.25v13.5h13.5v-3.375h0v-0.281l2.25-1.688V494.5h0Zm-4.95-3.6a1.131,1.131,0,0,1-.675.225A1.126,1.126,0,0,1,664.25,490v-1.125a7.876,7.876,0,0,0-7.545,5.625h0a7.884,7.884,0,0,1-.33-2.25h0a7.875,7.875,0,0,1,7.875-7.875V483.25a1.125,1.125,0,0,1,1.8-.9l4.5,3.375a1.125,1.125,0,0,1,0,1.8Z"
+                        transform="translate(-653 -481)" />
+                </svg>
+            </div>
+        </footer>
+        
+    </main>
+<script src='https://code.jquery.com/jquery-3.4.1.js', integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=', crossorigin='anonymous'></script>
+<script src="js/script.js"></script>
+</body>
+</html>

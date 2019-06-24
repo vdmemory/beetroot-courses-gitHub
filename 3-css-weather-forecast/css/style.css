@@ -1,0 +1,95 @@
+html, 
+body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	color: white;
+	background-color: #3399CC;
+	border: 15px solid #2B81AC;
+	box-sizing: border-box;
+	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+h1, p, ul, span{
+	display: block;
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 0px;
+}
+h1{
+	margin-top: 15px;
+}
+ul{
+	font-size: 0;
+	border: 2px solid #fff;
+	width: 90%;
+}
+ul>li{
+	display: inline-block;
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+	line-height: 2;
+	color: #fff;
+	border: 2px solid #fff;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+ul>li>span{
+	 padding: 30px 0;
+}
+li:first-child,
+li:nth-child(9){
+	width: 50%;
+}
+li:nth-child(n+2):nth-child(-n+8),
+li:nth-child(10){
+	width: 25%;
+}
+li:last-child{
+	width: 100%;
+}
+li:nth-child(1)>span{
+	background: #3398CC;
+}
+li:nth-child(2)>span{
+	background: #33CCCC;
+}
+li:nth-child(3)>span{
+	background: #996699;
+}
+li:nth-child(4)>span{
+	background: #C24747;
+}
+li:nth-child(5)>span{
+	background: #E2674A;
+}
+li:nth-child(6)>span{
+	background: #FFCC66;
+}
+li:nth-child(7)>span{
+	background: #99CC99;
+}
+li:nth-child(8)>span{
+	background: #669999;
+}
+li:nth-child(9)>span{
+	background: #CC6699;
+}
+li:nth-child(10)>span{
+	background: #339966;
+}
+li:nth-child(11)>span{
+	background: #666699;
+}
+ul:hover>li>span,
+ul>li>span:hover{
+	transition: all .2s ease-in;
+}
+ul:hover>li>span{
+	opacity: 0.5;
+	cursor: pointer;
+}
+ul>li>span:hover{
+	opacity: 1;
+}

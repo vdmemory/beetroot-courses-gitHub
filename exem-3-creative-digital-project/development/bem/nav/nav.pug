@@ -1,0 +1,11 @@
+mixin nav(contextNav)
+    ul.nav_menu-burger
+        li.nav_item.line-1
+        li.nav_item.line-2
+        li.nav_item.line-3
+    .nav1#_nav1._active
+        each valNav in contextNav
+            a.nav1_link1(href=valNav.href, title=valNav.title)=valNav.name		
+    nav.nav#_nav
+        each valNav in contextNav
+            a.nav_link(href=valNav.href, title=valNav.title)=valNav.name

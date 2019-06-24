@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nike Product Card</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400" rel="stylesheet">
+	<!-- browser-sync start --server --files "css/*.css, js/*.js, *.html" -->
+
+</head>
+
+<body>
+	<div class="layout">
+		<div class="layout_item">
+			<header class="header">
+				<img src="img/logo.png" class="header_logo" alt="">
+				<nav class="header_nav">
+					<a href="#" class="header_link">Lifestyle</a>
+					<a href="#" class="header_link">Running</a>
+					<a href="#" class="header_link">Football</a>
+					<a href="#" class="header_link">Skateboarding</a>
+				</nav>
+				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13">
+					<defs>
+						<style>
+							.cls-1 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="btn_menu.svg" class="cls-1" d="M791,34h22v1H791V34Zm0,6h22v1H791V40Zm0,6h22v1H791V46Z"
+						transform="translate(-791 -34)" />
+				</svg>
+			</header>
+		</div>
+		<div class="layout_item">
+			<section class="product">
+
+				<main class="product_main">
+					<h1 class="product_title">Huarache</h1>
+					<div class="product_picture-wrap">
+						<img src="img/sneacker.png" alt="" class="product_picture">
+					</div>
+					
+					<div class="product_thumbnail-list">
+						<img src="img/sneacker1.png" alt="" class="product_thumbnail">
+						<img src="img/sneacker2.png" alt="" class="product_thumbnail">
+						<img src="img/sneacker3.png" alt="" class="product_thumbnail">
+					</div>
+				</main>
+
+				<aside class="product_info">
+					<div class="product_close">
+						<button class="product_btn"></button>
+					</div>
+					<div class="product_line">
+						<div class="label label__new">new</div>
+					</div>
+					<div class="product_line product_line__baby">
+						<div class="h1">The <strong class="h1_strong">running</strong> has just begun</div>
+					</div>
+					<div class="product_line">
+						<div class="rating">
+							<div class="rating_caption">Huarache</div>
+							<div class="rating_list">
+								<span class="rating_item">&#9733;</span>
+								<span class="rating_item rating_item__active">&#9733;</span>
+								<span class="rating_item rating_item__active">&#9733;</span>
+								<span class="rating_item rating_item__active">&#9733;</span>
+								<span class="rating_item rating_item__active">&#9733;</span>
+							</div>
+						</div>
+					</div>
+					<div class="product_line">
+						<div class="price">
+							<div class="price_currency">&#36;</div>
+							<div class="price_numeric">200</div>
+						</div>
+					</div>
+					<div class="product_line">
+						<div class="size">
+							<div class="size_caption">Size</div>
+							<div class="size_list">
+								<div class="size_item"><button class="button button__count">7</button></div>
+								<div class="size_item"><button class="button button__count">8</button></div>
+								<div class="size_item"><button class="button button__count">9</button></div>
+								<div class="size_item"><button class="button button__count button__active">10</button></div>
+								<div class="size_item"><button class="button button__count">11</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="product_line">
+						<button class="button button__hover button__buy">Add to cart</button>
+					</div>
+					<div class="product_line">
+						<button class="button button__hover">Whishlist</button>
+					</div>
+				</aside>
+
+			</section>
+		</div>
+	</div>
+</body>
+
+</html>

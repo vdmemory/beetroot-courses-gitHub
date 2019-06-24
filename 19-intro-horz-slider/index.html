@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intro Horz Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+    <link rel="stylesheet" href="slickStyle.css">   
+    <script src='https://code.jquery.com/jquery-3.4.1.js', integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=', crossorigin='anonymous'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <nav class="nav">
+            <div class="nav_content">
+                <div class="nav_left"><a class="nav_title" href="#" title="Intro">Intro</a></div>
+                <div class="nav_right">
+                    <ul class="nav_bar">
+                        <li class="nav_item"><a class="nav_link" href="#" title="Who We Are">Home</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#" title="What We Do">About</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#" title="Travel With Us">Sevices</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#" title="Contact Us">Works</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#" title="Contact Us">Events</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#" title="Contact Us">Contakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <article class="slider">
+            <div class="slider_content">
+                <div class="slider_list">
+                    <div class="slider_item syle">
+                        <h1 class="slider_title">We craft meaningful digital ex- periences</h1>
+                        <h2 class="slider_subtitle">Creating products and services that transform organiza- tions for the digitsl economy</h2>
+                        <div class="slider_buttom">
+                            <a class="button-section" href="#">See our work</a>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <h1 class="slider_title">We craft meaningful digital experiences</h1>
+                        <h2 class="slider_subtitle">Creating products and services that transform organizations for the digitsl economy</h2>
+                        <div class="slider_buttom">
+                            <a class="button-section" href="#">See our work</a>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <h1 class="slider_title">We craft meaningful digital experiences</h1>
+                        <h2 class="slider_subtitle">Creating products and services that transform organizations for the digitsl economy</h2>
+                        <div class="slider_buttom">
+                            <a class="button-section" href="#">See our work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </articl>
+    </main>
+    <script>
+        //window.addEventListener('DOMContentLoaded', () => console.log($('._sliderList')))
+        $(() => {
+            $('.slider_list').slick({
+                dots: true,
+                // autoplay: true,
+                // autoplaySpeed: 2000
+                // variableWidth: true,
+                variableHeight: true
+            });
+        })
+
+    </script>
+</body>
+</html>

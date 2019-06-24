@@ -1,0 +1,29 @@
+@import "../params.less";
+
+.label {
+    position: relative;
+    background: radial-gradient(circle, @orange, @orange 5%, @orange 5%, transparent 8%),
+        radial-gradient(circle, @orange, @orange 15%, @orange 15%, transparent 18%),
+        radial-gradient(circle, @orange, @orange 46%, @orange 46%, transparent 49%);
+    background-position: 29px -26px, 19px -15px, -5px 9px;
+    width: 70px;
+    height: 65px;
+
+    &_p {
+        position: absolute;
+        font: 24px/32px 'Bebas Neue Reg', sans-serif;
+        color: @bg-color-card;
+        right: 34px;
+        top: 26px;
+    }
+
+    &_popular {
+        width: 105px;
+        height: 36px;
+        background-image: url(img/popular.png);
+        position: absolute;
+        right: -90px;
+        top: 23px;
+        z-index: 5;
+    }
+}

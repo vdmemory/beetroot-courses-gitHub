@@ -1,0 +1,18 @@
+include ../logo/logo.pug
+include ../nav-bar/nav-bar.pug
+include ../motto/motto.pug
+
+
+mixin header(headProps)
+    header.header
+        .header_top-line
+            .header_top-left
+                +logo(headProps.logo)
+            .header_top-right
+                +nav-bar(headProps.navBars)
+        .header_bottom-line
+            .header_content
+                +motto(headProps)
+                +link('#', 'Get Started')(class="motto_button")
+                p.header_text= headProps.text
+                

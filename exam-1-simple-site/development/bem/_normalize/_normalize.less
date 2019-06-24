@@ -1,0 +1,80 @@
+@colorBtnSearchNav: #5474fd;
+@fixWidth: 1110px;
+
+* {
+    box-sizing: border-box;
+    transition: .2s ease-in;
+}
+
+.body {
+    height: 100%;
+}
+
+input[type=submit],
+input[type=text] {
+    padding: 1px 0 0 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.layout {
+    font: 16px/26px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.1em;
+    color: white;
+    width: 100%;
+    min-width: @fixWidth;
+    background-size: cover;
+
+
+    &_section {
+        max-width: @fixWidth;
+    }
+
+    &__bg-header {
+        background-image: url(img/bg-header.png);
+        height: calc(100vh - 80px);
+    }
+
+    &__bg-nav {
+        background-color: @colorBtnSearchNav;
+        height: 80px;
+        position: sticky;
+        top: 0;
+    }
+
+    &__bg-choose {
+        background-image: url(img/bg-chooseUs.png);
+        height: 685px;
+        padding: 0;
+    }
+
+    &__bg-icons {
+        background-color: #333333;
+        height: 340px;
+    }
+
+    &__bg-spain-one {
+        background-image: url(img/bg-spain-one.png);
+    }
+
+    &__bg-spain-two {
+        background-image: url(img/bg-spain-two.png);
+    }
+
+    &__bg-spain-one,
+    &__bg-spain-two {
+        height: 700px;
+    }
+
+    &__bg-our-tourist {
+        background-image: url(img/bg-ourTourist.png);
+        height: 730px;
+    }
+
+    &__bg-footer {
+        background-color: #232323;
+        height: 270px;
+        position: absolute;
+    }
+}

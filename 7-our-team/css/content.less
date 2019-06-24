@@ -1,0 +1,43 @@
+@widthContent: 1140px;
+@import "_vars";
+
+.content {
+    height: 100%;
+    min-width: @widthContent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_inner {
+        width: @widthContent;
+    }
+
+    &_line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        background-image: url(../img/bonfire_icon.png);
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 210px;
+            height: 1px;
+            background-color: @mainColor;
+            margin: 0 15px;
+        }
+
+    }
+
+    &_item {
+        margin-bottom: 45px;
+    }
+    &_leyout{
+        margin-bottom: 30px;
+    }
+}

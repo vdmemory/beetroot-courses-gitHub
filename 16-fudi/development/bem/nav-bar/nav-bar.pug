@@ -1,0 +1,8 @@
+mixin nav-bar(navBars)
+    .nav-bar
+        each navBar in navBars
+            +nav-bar-item(navBar)
+
+mixin nav-bar-item(navBar)
+    if (navBar.navHref.length > 0)
+        a(href= navBar.navHref, title= navBar.navTitle, class='nav-bar' + navBar.navClass)= navBar.navName

@@ -1,0 +1,36 @@
+.dot {
+    &_items {
+        text-align: center;
+    }
+
+    &_item {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        bottom: 18px;
+        left: 5px;
+        opacity: .4;
+        background: white;
+        display: block;
+        border-radius: 100px;
+        z-index: 0;
+    }
+
+    &_button {
+        display: inline-block;
+    }
+
+    &_input {
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &_input:checked+&_item {
+        opacity: 1;
+    }
+}

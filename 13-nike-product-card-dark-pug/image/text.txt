@@ -1,0 +1,81 @@
+Nike SB Stefan  Janoski Max
+
+font-family: MuseoSansRounded;
+color:  #e1e1e1;
+font-size: 24px;/* Приближение из-за подстановки шрифтов */
+line-height: 26px;/* Приближение из-за подстановки шрифтов */
+text-align: left;
+**********************
+Unisex Skateboarding Shoe (Men's Sizing)
+
+font-family: MuseoSansRounded;
+color:  #e1e1e1;
+font-size: 14px;/* Приближение из-за подстановки шрифтов */
+line-height: 26px;/* Приближение из-за подстановки шрифтов */
+text-align: left;
+*********************
+border-width: 1px;
+border-color:  #ffffff;
+border-style: solid;
+background-color:  #111a28;
+opacity: 0.26;
+width: 67px;
+height: 30px;
+**********************
+font-family: MuseoSansRounded;
+color:  #e1e1e1;
+font-size: 14px;/* Приближение из-за подстановки шрифтов */
+line-height: 18px;/* Приближение из-за подстановки шрифтов */
+text-align: left;
+*********************
+border-width: 1px;
+border-color:  #4c525a;
+border-style: solid;
+width: 11px;
+height: 6px;
+**********************
+border-width: 1px;
+border-color:  #ffffff;
+border-style: solid;
+background-color:  #4c525a;
+opacity: 0.26;
+width: 182px;
+height: 38px;
+**********************
+font-family: MuseoSansRounded;
+color:  #e1e1e1;
+font-size: 14px;/* Приближение из-за подстановки шрифтов */
+line-height: 18px;/* Приближение из-за подстановки шрифтов */
+text-align: left;
+**********************
+border-radius: 50%;
+background-color:  #1f273f;
+width: 12px;
+height: 12px;
+*********************
+border-radius: 50%;
+background-color:  #ffffff;
+width: 9px;
+height: 9px;
+*********************
+border-radius: 50%;
+background-color:  #ed3333;
+width: 9px;
+height: 9px;
+********************
+border-radius: 50%;
+background-color:  #29e3ea;
+width: 9px;
+height: 9px;
+*******************
+width: 65px;
+height: 33px;
+******************
+border-radius: 10px;
+background-color:  #111a28;
+box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+width: 686px;
+height: 391px;
+*******************
+width: 800px;
+height: 600px;

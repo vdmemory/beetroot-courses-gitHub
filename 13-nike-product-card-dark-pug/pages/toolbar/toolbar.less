@@ -1,0 +1,39 @@
+@import "var.less";
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar_input {
+    display: none;
+
+    &:checked&+label {
+        border: 2px solid @border_color_5;
+    }
+}
+
+.toolbar_label {
+    width: 4px;
+    height: 4px;
+    border: 2px solid @border_color_4;
+    padding: 3px 3px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.toolbar_label__grey {
+    background-color: @background_color_1;
+}
+
+.toolbar_label__white {
+    background-color: @background_color_2;
+}
+
+.toolbar_label__red {
+    background-color: @background_color_3;
+}
+
+.toolbar_label__blue {
+    background-color: @background_color_4;
+}

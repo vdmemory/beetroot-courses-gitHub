@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    min-width: 1920px;
+    color: white;
+}
+
+/*START NAV BAR*/
+.nav {
+    width: 100%;
+    height: 80px;
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.nav_link,
+.nav_title {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+.nav_title {
+    font-size: 36px;
+}
+
+.nav_title:hover {
+    font-size: 42px;
+}
+
+.nav_bar {
+    font-size: 14px;
+    letter-spacing: 0.05;
+    display: flex;
+}
+
+.nav_item {
+    margin-left: 35px;
+    list-style: none;
+}
+
+/*END NAV BAR*/
+
+/*START SLIDER*/
+.slider{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.slider_content {
+    padding: 20px 60px;
+}
+
+.slider_item {
+    width: 100%;
+}
+
+.slider_title,
+.slider_subtitle {
+    text-align: center;
+    margin: auto;
+}
+
+.slider_title {
+    width: 1120px;
+    font-size: 80.09px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-top: 250px;
+    /**/
+    line-height: 100px;
+}
+
+.slider_subtitle {
+    width: 820px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 50px;
+    line-height: 45px;
+}
+
+.slider_buttom {
+    width: 185px;
+    height: 60px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 270px;
+    /**/
+}
+
+/* .slick-list,
+.slider_content,
+.slider_list{
+    height: 100%;
+} */
+
+
+/*END SLIDER*/
+
+/*START BUTTOM*/
+.button-section {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #eecd31;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font: 18px/60px 'Open Sans', sans-serif;
+    transition: 0.2s ease-in;
+    border-radius: 26px;
+}
+
+.button-section:hover {
+    background-color: white;
+    color: #c8b03d;
+}
+
+/*END BUTTOM*/

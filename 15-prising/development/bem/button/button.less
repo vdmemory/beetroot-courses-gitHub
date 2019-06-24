@@ -1,0 +1,21 @@
+@import "../params.less";
+
+.button {
+    .button-style;
+    position: absolute;
+    padding: 0 50px;
+    background-color: @color-btn;
+    transition: .2s ease-in;
+
+    &:hover {
+        background-color: @orange;
+    }
+
+    &__active {
+        background-color: @orange;
+
+        &:hover {
+            background-color: @color-btn;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+mixin container(id, src, title, subtitle, text, sale, price)
+    section.container(id=id)
+        div.container_left
+            img.container_picture(src=src, alt="POSTER")
+            .container_rating
+                +rating()
+        .container_right
+            .container_row
+                .container_col
+                    h1.container_title=title
+                    p.container_subtitle=subtitle
+                .container_progress
+                    +progress('7.8')
+            p.container_text=text
+            .container_row
+                .container_col
+                    p.container_sale=sale
+                    p.container_price=price
+                .container_col
+                    .container_buy
+                        +button(btnValue)            

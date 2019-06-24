@@ -1,0 +1,38 @@
+.footer {
+    height: 185px;
+    background-color: @colorText;
+
+    &_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
+
+    &_title {
+        font: 400 18px/22px 'PT Sans', sans-serif;
+        color: white;
+        margin-right: 0;
+        padding-bottom: 0;
+
+        @media (max-width: 768px) {
+            margin-right: 60px;
+        }
+
+        @media (max-width: 480px) {
+            text-align: center;
+            margin-right: 0;
+            padding-bottom: 15px;
+        }
+    }
+}

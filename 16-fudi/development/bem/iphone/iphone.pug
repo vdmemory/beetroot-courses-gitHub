@@ -1,0 +1,12 @@
+
+mixin iphone(iProps)
+    .iphone
+        .iphone_left-bar
+        .iphone_right-bar
+            h1.iphone_title=iProps.iTitle
+            each iText in iProps.iText
+                p.iphone_text=iText
+                br
+            img(src=iProps.iApp, alt="alt").iphone_app
+            img(src=iProps.iGoogle, alt="alt").iphone_google
+        .iphone_position-bar

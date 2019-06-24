@@ -1,0 +1,13 @@
+include ../card/card.pug
+
+mixin ourTeam()
+    section.ourTeam
+        .ourTeam_content.layout_1270
+            .ourTeam_title
+                +main(
+                        'icons/Icon-Team.png',
+                        'MEET OUR TEAM'
+                    )
+            .ourTeam_teamItems._team.layout_1120
+                each slider2 in contextSlider2
+                    +card(slider2)

@@ -1,0 +1,13 @@
+include ../button-section/button-section.pug
+include ../title-section-h3/title-section-h3.pug
+
+mixin spain(layModif, modif, subtitle, title, text, nameBtn)
+    section.spain.layout(class=layModif)
+        .spain_content.layout_section(class=modif)
+            .spain_box
+                p.spain_subtitle=subtitle
+                .spain_title
+                    +title-section-h3(title)
+                p.spain_text=text
+                .spain_button
+                    +button-section(nameBtn) 

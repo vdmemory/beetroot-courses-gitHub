@@ -1,0 +1,13 @@
+include ../dot/dot.pug
+mixin comment()
+    .comment
+        .comment_cont
+            .comment_icon
+                img.comment_img(src="img/face.png")
+            p.comment_title
+                | “I am so happy because I found this recipe, and it just made my life easier.
+                br
+                | Thanks  so much for sharing!”
+            p.comment_subtitle - Michael Dawson, San Francisco, CA -
+            .comment_dot
+                +dot()

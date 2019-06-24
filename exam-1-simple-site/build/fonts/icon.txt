@@ -1,0 +1,19 @@
+
+<i class="fab fa-twitter"></i>
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-pinterest"></i>
+<i class="fas fa-quote-left"></i>
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Aleo', serif;
+
+link(href='https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700', rel='stylesheet')
+link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+
+color btn search nav: #5474fd;
+color text: #ffffff;
+color text places: #e8e8e8;
+color text plasholder: #999999;
+color bg footer, section: #333333;

@@ -1,0 +1,136 @@
+body {
+    background-color: #ACA298;
+}
+
+.inner {
+    width: 639px;
+    height: 640px;
+    margin: 20px auto;
+    border: 3px solid black;
+    background-color: white;
+    background-image: linear-gradient( 45deg, black 25%, transparent 25%, transparent 74%, black 75%, black), linear-gradient( 45deg, black 25%, transparent 25%, transparent 74%, black 75%, black);
+    background-size: 160px 160px;
+    background-position: 0 0, 80px 80px;
+}
+
+.check {
+    position: relative;
+}
+
+.ch,
+.ch-mod {
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.ch {
+    background-image: repeating-radial-gradient( #FFD5A9, #AF8359 3px, #F1C290 8px, #FFD5A9 10px);
+}
+
+.ch-mod {
+    background-image: repeating-radial-gradient( #58422D, #836950 3px, #B0855A 5px, #58422D 10px);
+}
+
+.ch-1,
+.ch-2,
+.ch-3,
+.ch-4 {
+    top: 5px;
+}
+
+.ch-1 {
+    left: 85px;
+}
+
+.ch-2 {
+    left: 245px;
+}
+
+.ch-3 {
+    left: 405px;
+}
+
+.ch-4 {
+    left: 565px;
+}
+
+.ch-5,
+.ch-6,
+.ch-7,
+.ch-8 {
+    top: 165px;
+}
+
+.ch-5,
+.ch--1 {
+    left: 85px;
+}
+
+.ch-6,
+.ch--2 {
+    left: 245px;
+}
+
+.ch-7,
+.ch--3 {
+    left: 405px;
+}
+
+.ch-8,
+.ch--4 {
+    left: 565px;
+}
+
+.ch-9,
+.ch-10,
+.ch-11,
+.ch-12 {
+    top: 85px;
+}
+
+.ch-9,
+.ch--5,
+.ch--9 {
+    left: 3px;
+}
+
+.ch-10,
+.ch--6,
+.ch--10 {
+    left: 165px;
+}
+
+.ch-11,
+.ch--7,
+.ch--11 {
+    left: 325px;
+}
+
+.ch-12,
+.ch--8,
+.ch--12 {
+    left: 485px;
+}
+
+.ch--1,
+.ch--2,
+.ch--3,
+.ch--4 {
+    top: 485px;
+}
+
+.ch--5,
+.ch--6,
+.ch--7,
+.ch--8 {
+    top: 405px;
+}
+
+.ch--9,
+.ch--10,
+.ch--11,
+.ch--12 {
+    top: 565px;
+}

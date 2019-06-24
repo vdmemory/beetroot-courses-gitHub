@@ -1,0 +1,46 @@
+include card/card.pug
+
+doctype
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Prising
+		link(rel="shortcut icon", href="favicon.png", type="image/x-icon")
+		link(href="style.css", rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css")
+		link(href="fonts/themify-icons/themify-icons.css", rel="stylesheet")
+		
+		
+	body
+		.main
+			.main_inner
+				- var listItems1 = ['Brand idea', 'Logo Inovation', 'Structure of Design', 'Quality of Design', 'User friendly']
+					+card({
+						currency: '$',
+						value: '29',
+						time: '/HR'},
+						'ti-palette',
+						'UI & Ux',
+						'list1',
+						''
+						)
+				- var listItems2 = ['2  -  Wireframe option', '3  -  logo Design Variation', '2  -  Homepage Variation',	'6  -  Innerpage', '1  -  Styleguide']
+					+card({
+						currency: '€',
+						value: '49',
+						time: '/HR'},
+						'ti-paint-bucket',
+						'Webdesign',
+						'list2',
+						'card__active'
+						)
+				- var listItems3 = ['PSD to HTML', 'HTML to Wordpress', 'PSD to Wordpress', 'HTML to Drupal', 'With Responsive']
+					+card({
+						currency: '$',
+						value: '39',
+						time: '/HR'},
+						'ti-hummer',
+						'Web development',
+						'list3',
+						''
+						)

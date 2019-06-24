@@ -1,0 +1,1 @@
+.food_item{position:relative;width:20%;font-size:0}.food{display:flex;flex-wrap:wrap;z-index:2}.food_image{width:100%}.food_title{position:absolute;color:white;text-transform:uppercase;top:calc(50% - 25px);text-align:center;width:100%}.food_subtitle{font-size:14px}.food_cook{font:700 36px 'Lato', sans-serif}

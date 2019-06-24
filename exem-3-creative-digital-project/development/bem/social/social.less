@@ -1,0 +1,37 @@
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    &_item {
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 25px;
+        transition: color .2s linear;
+
+        &:hover {
+            background-color: #9f9acf;
+            cursor: pointer;
+        }
+
+        &:hover .fab {
+            color: white;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &_item .fab {
+        color: #9f9acf;
+        font-size: 22px;
+        line-height: 36px;
+        transition: color .2s linear;
+    }
+
+}

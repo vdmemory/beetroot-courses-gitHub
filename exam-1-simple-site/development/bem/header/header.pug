@@ -1,0 +1,12 @@
+include ../search/search.pug
+
+mixin header(title, subtitle, nameScroll)
+    header.header.layout.layout__bg-header
+        .header_content.layout_section
+            h1.header_title=title
+            p.header_subtitle=subtitle
+            .header_search
+                +search()
+            .header_scroll-down
+                p.header_name-scroll=nameScroll
+                img.header_img-scroll(src="svg/angle.svg", alt="angle")

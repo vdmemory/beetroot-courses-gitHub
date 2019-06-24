@@ -1,0 +1,11 @@
+mixin icons(iconsData)
+    section.icons.layout.layout__bg-icons
+        .icons_content.layout_section
+            each iconData in iconsData
+                +iconData(iconData)
+                
+mixin iconData(iconData)
+    if (iconData.iconLink.length > 0)
+        .icons_item(class=iconData.iconModif)
+            img.icons_icon(src=iconData.iconLink, alt=iconData.iconAlt)
+            h2.title-section-h2=iconData.iconName

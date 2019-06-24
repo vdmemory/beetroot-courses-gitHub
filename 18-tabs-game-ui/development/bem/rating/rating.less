@@ -1,0 +1,28 @@
+.rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 25px;
+
+    &_list {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+    }
+
+    &_item {
+        display: inline-block;
+        position: relative;
+        width: 1.0em;
+        font-size: 25px;
+        color: #7f7f7f;
+    }
+
+    &_item:hover:before,
+    &_item:hover~&_item:before {
+        content: "\2605";
+        position: absolute;
+        left: 2px;
+        color: gold;
+    }
+}

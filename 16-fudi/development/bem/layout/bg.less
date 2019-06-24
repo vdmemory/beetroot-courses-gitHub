@@ -1,0 +1,64 @@
+.bg {
+    &_head-backside {
+        position: relative;
+        background-image: url(img/main.png);
+        background-size: cover;
+        height: 100vh;
+        .width-head;
+        z-index: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(360deg, #755e7f, #755e7f 18%, transparent 28%);
+            opacity: .4;
+            .width-head;
+            z-index: -1;
+        }
+    }
+
+    &_iphone-backside {
+        position: relative;
+        background-color: #f7f7f7;
+        background-size: cover;
+        height: 880px;
+    }
+
+    &_comment-backside {
+        position: relative;
+        background-color: #4a3949;
+        background-size: cover;
+        .width-head;
+        z-index: 0;
+        height: 460px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url(img/bg_slider.png);
+            background-repeat: no-repeat;
+            opacity: .8;
+            .width-head;
+            z-index: -1;
+            height: 460px;
+        }
+    }
+
+    &_title-backside {
+        padding: 100px 0 35px 0;
+        background-color: white;
+        height: 160px;
+    }
+
+    .bg_static-backside {
+        background: none;
+    }
+}

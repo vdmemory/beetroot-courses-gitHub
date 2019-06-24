@@ -1,0 +1,61 @@
+
+include _variables.pug
+
+include bem/header/header.pug
+include bem/nav/nav.pug
+include bem/intro/intro.pug
+include bem/about/about.pug
+include bem/services/services.pug
+include bem/works/works.pug
+include bem/ourTeam/ourTeam.pug
+include bem/touch/touch.pug
+include bem/footer/footer.pug
+include bem/adressTel/adressTel.pug
+
+
+DOCTYPE
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Creative Digital Project
+		link(href="favicon.png")
+		link(href="css/style.css", rel="stylesheet")
+		link(href="fonts/stylesheet.css", rel="stylesheet")
+		link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap', rel='stylesheet')
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.1/css/all.css", integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf", crossorigin="anonymous")
+
+		link(rel="stylesheet", href="https://kenwheeler.github.io/slick/slick/slick.css")
+		link(rel="stylesheet", href="css/slick-theme.css")
+
+	body
+		+header("icons/Logo.png")
+		+intro(
+			'CreativE DIGITAL Project',
+			'Duis mollis, est non commodo luctus,',
+			'nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
+		)
+		+about()
+		+services()
+		+works(contextSlider1)
+		+ourTeam()
+		+touch(
+			"Your Name *",
+			"Your Email *",
+			"Your Message *",
+			"send message"
+		)
+		+adressTel(
+			"icons/Icon-Address.png",
+			"Ikan Piranha Atas 220C <br> Malang - East Java <br> Indonesia",
+			"icons/Icon-Tel.png",
+			"+6281235966914"
+		)
+		+footer(contextSocial)
+
+	script(type="text/javascript" src="js/script.js")
+	script(src="https://code.jquery.com/jquery-3.4.1.min.js", integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=", crossorigin="anonymous")
+	script(src="https://kenwheeler.github.io/slick/slick/slick.js")
+
+
+		

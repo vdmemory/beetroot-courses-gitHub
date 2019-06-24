@@ -1,0 +1,44 @@
+@import "var.less";
+
+.rating {
+    display: flex;
+}
+
+.rating_list {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    padding-left: 5px;
+    padding: 12px 0 22px 4px;
+}
+
+.rating_item {
+    display: inline-block;
+    position: relative;
+    width: 0.5em;
+    color: @color_3;
+    font-size: 17px;
+    transition: all .2s linear;
+
+    &:hover {
+        &:before {
+            content: "\2605";
+            position: absolute;
+            left: -2;
+            color: @color_4;
+        }
+    }
+
+    &:hover&~.rating_item {
+        &:before {
+            content: "\2605";
+            position: absolute;
+            left: -2;
+            color: @color_4;
+        }
+    }
+}
+
+.rating_item__active {
+    color: @color_4;
+}

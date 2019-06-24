@@ -1,0 +1,56 @@
+include bem/header/header.pug
+include bem/nav/nav.pug
+include bem/choose/choose.pug
+include bem/icons/icons.pug
+include bem/spain/spain.pug
+include bem/our-tourist/our-tourist.pug
+include bem/footer/footer.pug
+include _variables.pug
+
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Travel more
+		link(rel="shortcut icon", href="favicon.png", type="image/x-icon")
+		link(href="style.css", rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css")
+		link(href='https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:300,400,700', rel='stylesheet')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+
+	body.body
+		+header(
+				'Bhromaon',
+				'Safe Travel Anywhere',
+				'Scroll Down'
+				)
+		+nav('Bhromaon', navigationData)
+		+choose(
+				'Why Choose Us',
+				'Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee',
+				'Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.',
+				'Explore place',
+				'img/img-chooseUs-1.png',
+				'img/img-chooseUs-2.png'
+				)
+		+icons(iconsData)
+		+spain(
+				'layout__bg-spain-one',
+				'spain__posizion-one',
+				'Spain',
+				'Grand Spain Madrid',
+				'But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system',
+				'Book Now'
+				)
+		+spain(
+				'layout__bg-spain-two',
+				'spain__posizion-two',
+				'Spain',
+				'Grand Spain Madrid',
+				'But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system',
+				'Book Now'
+				)
+		+our-tourist()
+		+footer()

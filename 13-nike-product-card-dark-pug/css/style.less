@@ -1,0 +1,42 @@
+@import "var.less";
+
+@import "fonts.less";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(../image/main-bg.png) fixed;
+    background-size: cover;
+    font: 14px/1 'Museo Sans Rounded 100', sans-serif;
+    color: @color_1;
+    min-width: 750px;
+}
+
+.layout_item {
+    width: 685px;
+    margin: 10% auto;
+    vertical-align: middle;
+}
+
+@import "../pages/product/product.less";
+
+.logo {
+    padding: 4px 0 0 0;
+}
+
+.picture {
+    padding: 60px 20px 65px;
+}
+
+@import "../pages/toolbar/toolbar.less";
+
+@import "../pages/title/title.less";
+
+@import "../pages/rating/rating.less";
+
+@import "../pages/select/select.less";
+
+@import "../pages/button/button.less";

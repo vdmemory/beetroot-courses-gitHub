@@ -1,0 +1,37 @@
+include ../title/title.pug
+include ../list/list.pug
+include ../label/label.pug
+include ../button/button.pug
+include ../package/package.pug
+
+
+mixin card(obj_price, className, title, list, card)
+    .card(class=card)
+        .card_price
+            .card_currency
+                =obj_price.currency
+            .card_value
+                =obj_price.value
+            .card_time
+                =obj_price.time
+        .card_title
+            +title(title)
+        .card_package
+            +package(className)
+        .card_list
+            +list(list)
+        .card_label
+            if card == 'card__active'
+                +label(card) 
+            else
+        .card_footer
+            if card == 'card__active'
+                .card_button.card_button__active
+                    +button(card)
+            else
+                .card_button
+                    +button(card)
+            if card == 'card__active'
+                .card_discount Ordernow &  get 15% Discount
+            else
+

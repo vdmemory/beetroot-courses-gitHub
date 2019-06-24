@@ -1,0 +1,36 @@
+include bem/button/button.pug
+include bem/social/social.pug
+
+
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Our Team
+        link(rel='icon', href='favicon.png')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css')
+        link(rel='stylesheet', href='css/style.css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,500|Roboto:900', rel='stylesheet')
+        // browser-sync start --server --files "css/*.css, js/*.js, *.html"
+    body
+        .content
+            .content_inner
+                .content_item
+                    header.header
+                        h1.header_title OUR TEAM
+                        span.header_subtitle THE GENIUSES BEHIND OUR WORK
+                .content_line
+                .person
+                    .person_picture
+                        img.person_image(src='img/Rectangle.png', alt='')
+                    .person_info
+                        h2.person_name Sahariar Kabir
+                        h3.person_position Frontend Developer
+                        .content_leyout
+                        +social()
+                        p.person_cv
+                            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis placeat odit excepturi rem, iste eligendi eaque cum dolore eveniet earum voluptatem perspiciatis sequi ipsa voluptate quod ab debitis ullam itaque quos nesciunt fuga enim sed? Eos ad, numquam ex iusto libero asperiores, odit expedita quidem blanditiis tenetur suscipit aspernatur eligendi?
+                        +button('VIEW PROFILE') 
+                input.dots(type='radio')
+                input.dots(type='radio')
+                input.dots(type='radio')

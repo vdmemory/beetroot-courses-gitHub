@@ -1,0 +1,36 @@
+@import "var.less";
+
+.button {
+    color: @color_2;
+    background: @background_color_8;
+    border: 1px solid @border_color_6;
+    border-radius: 0;
+    font: 14px/18px 'Museo Sans Rounded 100', sans-serif;
+    padding: 12px 0;
+    min-width: 186px;
+    transition: all .2s linear;
+}
+
+.button__buy {
+    &:hover {
+        color: @color_5;
+        background-color: @background_color_5;
+        border: 1px solid transparent;
+    }
+}
+
+.button__count {
+    padding: 6px;
+    min-width: 26px;
+    border-color: @border_color_1;
+
+    &:hover {
+        border-color: @border_color_2;
+        background-color: @background_color_6;
+        color: @color_1;
+    }
+}
+
+.button__count.button__active {
+    border-color: @border_color_3;
+}

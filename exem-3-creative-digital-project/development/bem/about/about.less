@@ -1,0 +1,65 @@
+@import "../main/main.less";
+@import "../botton/botton.less";
+
+.about {
+    padding: 120px 0;
+
+    &_content {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: 960px) {
+            flex-direction: column;
+        }
+    }
+
+    &_title {
+        width: calc(100% / 3);
+        background-image: url(../img/about.jpg);
+        background-repeat: no-repeat;
+
+        @media (max-width: 960px) {
+            width: 100%;
+
+            background-image: url(../img/about-960.jpg);
+            background-position: center;
+            background-color: #9f9acf;
+        }
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - (100% / 3));
+        padding: 40px 0 0 120px;
+
+        @media (max-width: 960px) {
+            text-align: center;
+            padding-left: 0px;
+            margin: 0 auto;
+            padding: 55px 0 0 0;
+        }
+    }
+
+    &_text {
+        padding-top: 30px;
+    }
+
+    @media (max-width: 960px) {
+        padding: 0 0 35px 0;
+    }
+
+    &_botton {
+        display: flex;
+        padding: 100px 0;
+
+        @media (max-width: 960px) {
+            padding: 60px 0;
+        }
+
+        &__btn-gray {
+            color: #7d7a7c;
+            border: 1px solid #7d7a7c;
+        }
+    }
+}

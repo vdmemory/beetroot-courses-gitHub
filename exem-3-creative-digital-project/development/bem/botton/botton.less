@@ -1,0 +1,40 @@
+@colorBTN1: #7d7a7c;
+
+@colorBTN2: #fefcfd;
+
+.button {
+    margin: 0 auto;
+    min-width: 195px;
+
+    display: inline-block;
+    font: 400 italic 20px/20px 'PT Sans', sans-serif;
+    padding: 15px 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+
+    &__btn-gray {
+        color: @colorBTN1;
+        border: 1px solid @colorBTN1;
+        transition: 0.2s ease;
+
+        &:hover {
+            background-color: #BDB9BC;
+            color: @colorBTN2;
+            border: 1px solid @colorBTN2;
+        }
+    }
+
+    &__btn-white {
+        color: @colorBTN2;
+        border: 1px solid @colorBTN2;
+        transition: 0.2s ease;
+
+        &:hover {
+            background-color: #C4BFFF;
+            color: @colorBTN2;
+            border: 1px solid #C4BFFF;
+        }
+    }
+}

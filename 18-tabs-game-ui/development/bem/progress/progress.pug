@@ -1,0 +1,6 @@
+mixin progress(val)
+    .progress
+        svg.progress_circle(width='80px', height='80px', xmlns='http://www.w3.org/2000/svg')
+            circle.progress_back(cx='40', cy='40', r='34')
+            circle.progress_prog(cx='40', cy='40', r='34')
+        .progress_text=val

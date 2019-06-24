@@ -1,0 +1,23 @@
+mixin get(getValues)
+    section.get
+        each getVal in getValues
+            .get_item
+                .get_page
+                    +get-svg(getVal)
+                +get-h1(getVal)
+                +get-p(getVal)
+            
+
+mixin get-svg(getVal)
+    if (getVal.getHref.length > 0)
+        img(src=getVal.getHref, alt="alt").icon_svg
+
+mixin get-h1(getVal)
+    if (getVal.getTitle.length > 0)
+        h1.get_title=getVal.getTitle
+
+mixin get-p(getVal)
+    if (getVal.getText.length > 0)
+        p.get_text=getVal.getText
+
+            

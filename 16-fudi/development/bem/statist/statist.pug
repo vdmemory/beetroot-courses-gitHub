@@ -1,0 +1,6 @@
+mixin static(statVal)
+    .static
+        each val in statVal
+            .static_range
+                h4.static_titles=val.numeric
+                p.static_info=val.name

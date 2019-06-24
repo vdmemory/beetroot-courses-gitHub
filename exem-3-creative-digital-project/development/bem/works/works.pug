@@ -1,0 +1,16 @@
+mixin works(contextSlider1)
+    section.works#_Works
+        .works_content.layout_1270
+            .works_title
+                +main(
+                        'icons/Icon-Works.png',
+                        'RECENT WORKS'
+                    )
+            .works_review._review.layout_730
+                each slider1 in contextSlider1
+                    img(src=slider1.src, alt="alt").review_item
+            .works_botton
+                    +botton(
+                        "Wiev Gallery",
+                        "button__btn-white"
+                        )

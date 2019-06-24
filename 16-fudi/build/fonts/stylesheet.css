@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('TimesNewRomanPS-BoldItalicMT.woff2') format('woff2'),
+        url('TimesNewRomanPS-BoldItalicMT.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('Lato-Hairline.woff2') format('woff2'),
+        url('Lato-Hairline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('Lato-HairlineItalic.woff2') format('woff2'),
+        url('Lato-HairlineItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+

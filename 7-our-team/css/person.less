@@ -1,0 +1,90 @@
+@import"_vars";
+// @border: 1px solid @mainColor;
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    &_picture {
+        border: 1px solid @mainColor;
+        position: relative;
+        padding: 15px;
+        margin: 0 auto;
+
+        &::before,
+        &::after {
+            content: '';
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+        }
+
+        &::before {
+            width: calc(100% + 2px);
+            height: calc(100% - 200px);
+            left: -1px;
+            top: 100px;
+        }
+
+        &::after {
+            height: calc(100% + 2px);
+            width: calc(100% - 200px);
+            left: 100px;
+            top: -1px;
+        }
+    }
+
+    &_image {
+        display: block;
+        width: 380px;
+        border: @border;
+        position: relative;
+        z-index: 3;
+    }
+
+    &_info {
+        border-left: @border;
+        width: 50%;
+        height: 100%;
+        padding: 0 80px;
+    }
+
+    &_cv {
+        font: 14px/24px 'Raleway', sans-serif;
+        color: @textColor;
+    }
+
+    &_cv::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 4px;
+        background: linear-gradient(90deg, #fc0 10px, white 10px, white 15px, #fc0 15px, #fc0 35px, white 35px, white 40px, #fc0 40px);
+        // background: linear-gradient(90deg, #fc0 20%, white 20%, white 30%, #fc0 30%, #fc0 70%, white 70%, white 80%, #fc0 80%, #fc0 80%);
+        margin: 20px auto;
+    }
+
+    &_name {
+        font: 900 36px/24px 'Roboto', sans-serif;
+        letter-spacing: 0.02em;
+        color: @textColor;
+        text-align: center;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: @mainColor;
+            margin: 35px auto 35px;
+        }
+    }
+
+    &_position {
+        font-size: 24px;
+        font: 24px/36px 'Raleway', sans-serif;
+        color: @textColor;
+    }
+}
